@@ -1,0 +1,19 @@
+#spring:
+#  sql:
+#    init:
+#      mode: always # This is to always initialize a database using scripts as script-based initialization is performed by default only for embedded databases.
+#
+#  datasource: # Note: spring.datasource will have to be removed once AAD for SQL is configured.
+#    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    initialization-mode: always # this is to indicate Spring Boot to always generate a db schema using `schema.sql` file.
+#    hikari:
+#      maximum-pool-size: 10 #maximum pool size
+#  jpa:
+#    defer-datasource-initialization: true # This will ensure, that after Hibernate schema creation is performed then additionally schema.sql is read for any additional schema changes and data.sql is executed to populate the database.
+#    hibernate:
+#      dialect: org.hibernate.dialect.SQLServer2008Dialect
+#      ddl-auto: none
+#      show-sql: true
+#      generate-ddl: false
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

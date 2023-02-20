@@ -1,0 +1,24 @@
+#spring:
+#  security:
+#    auth-enabled: false
+#  sql:
+#    init:
+#      mode: always # This is to always initialize a database using scripts as script-based initialization is performed by default only for embedded databases.
+#  datasource: # Note: spring.datasource will have to be removed once AAD for SQL is configured.
+#    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    url: jdbc:sqlserver://localhost:1433;databaseName=tempdb;encrypt=true;trustServerCertificate=true;
+#    username: sa
+#    password: Welcome123
+#  jpa:
+#    hibernate:
+#      dialect: org.hibernate.dialect.SQLServer2008Dialect
+#      ddl-auto: none
+#      show-sql: true
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl # This is necessary to map property names of DAOs with the ones in SQL DB Tables.
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.SQLServer2008Dialect
+#
+#server:
+#  port: 9010
