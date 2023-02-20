@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
 	<modules>
-		<module>Common</module>
-		<module>Api</module>
-        <module>Sql</module>
+		<module>common</module>
+		<module>api</module>
+        <module>sql</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
