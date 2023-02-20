@@ -11,5 +11,5 @@ public class CityResponseDto {
     Long cityId;
     String cityName;
     String description;
-    List<String> cityImageUrlList;
+    String cityImageUrl;
 }

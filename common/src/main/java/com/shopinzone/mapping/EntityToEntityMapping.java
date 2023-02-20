@@ -13,6 +13,7 @@ public class EntityToEntityMapping {
     public static CityEntity updateCityEntity(CityRequestDto cityRequest, CityEntity cityEntity) {
         cityEntity.setCityName(cityRequest.getCityName());
         cityEntity.setDescription(cityRequest.getDescription());
+        cityEntity.setCityImageUrl(cityRequest.getCityImageUrl());
         cityEntity.setLastUpdated(OffsetDateTime.now());
         return cityEntity;
     }

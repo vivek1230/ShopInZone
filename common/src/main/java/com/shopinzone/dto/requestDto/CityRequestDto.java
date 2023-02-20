@@ -10,7 +10,5 @@ import java.util.List;
 public class CityRequestDto {
     String cityName;
     String description;
-    List<String> cityImageUrlList;
-    List<String> cityNameList;
-    List<String> cityPinCodeList;
+    String cityImageUrl;
 }

@@ -26,6 +26,9 @@ public class CityEntity {
     @Column(name = "Description")
     String description;
 
+    @Column(name = "CityImageUrl")
+    String cityImageUrl;
+
     @Column(name = "Created")
     OffsetDateTime created;
 

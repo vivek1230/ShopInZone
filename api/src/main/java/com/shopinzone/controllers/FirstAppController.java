@@ -60,7 +60,7 @@ public class FirstAppController {
             @RequestBody ProfileRequestDto profileRequest) {
 
         log.info("Calling addProfile");
-        ProfileResponseDto profileResponse = firstAppService.addProfile(email, profileRequest);
+        ProfileResponseDto profileResponse = firstAppService.updateProfile(email, profileRequest);
         return new ResponseEntity<>(profileResponse, HttpStatus.OK);
     }
 
