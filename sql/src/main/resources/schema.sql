@@ -73,6 +73,7 @@ BEGIN
         CityId bigint IDENTITY,
         CityName nvarchar(100) NOT NULL,
         Description nvarchar(2000) NOT NULL,
+        CityImageUrl nvarchar(100) NOT NULL,
         Created datetimeoffset NOT NULL default(current_timestamp),
         LastUpdated datetimeoffset NOT NULL default(current_timestamp)
         CONSTRAINT PK_CityEntity PRIMARY KEY (CityName)

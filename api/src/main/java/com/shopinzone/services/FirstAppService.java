@@ -97,14 +97,17 @@ public class FirstAppService {
 
         authenticateUserWithEmail(email);
         log.info("ProfileRequest : {}", profileRequest);
+        ProfileEntity profileEntity;
         Optional<ProfileEntity> profileEntityOptional = profileEntityRepository.findByEmail(email);
-        profileEntityOptional.ifPresent(profileEntity -> {
+        if (profileEntityOptional.isPresent()) {
             profileEntity = EntityToEntityMapping.updateProfileEntity(email, profileRequest,
-                    profileEntity.getProfileId());
-            profileEntity = profileEntityRepository.save(profileEntity);
-            log.info("Updated ProfileEntity for email: {}, ProfileEntity: {}", email, profileEntity);
-        });
-
+                    profileEntityOptional.get().getProfileId());
+            log.info("Updating ProfileEntity for email: {}, ProfileEntity: {}", email, profileEntity);
+        } else {
+            profileEntity = DtoToEntityMapping.getProfileEntity(email, profileRequest);
+            log.info("Saving ProfileEntity for email: {}, ProfileEntity: {}", email, profileEntity);
+        }
+        profileEntityRepository.save(profileEntity);
         return getProfile(email);
     }
 
@@ -184,55 +187,15 @@ public class FirstAppService {
         CityEntity cityEntity = DtoToEntityMapping.getCityEntity(cityRequest);
         cityEntity = cityEntityRepository.save(cityEntity);
         log.info("Added CityEntity : {}", cityEntity);
-
-        updateCityDetails(cityRequest, cityEntity.getCityId());
         return getCityList(email);
-    }
-
-    private void updateCityDetails(CityRequestDto cityRequest, Long cityId) {
-        if (!CollectionUtils.isEmpty(cityRequest.getCityImageUrlList()))
-            saveAllCityImageUrlMapping(cityRequest.getCityImageUrlList(), cityId);
-        if (!CollectionUtils.isEmpty(cityRequest.getCityPinCodeList()))
-            saveAllCityPinCodeMapping(cityRequest.getCityPinCodeList(), cityId);
-        if (!CollectionUtils.isEmpty(cityRequest.getCityNameList()))
-            saveAllCityNameMapping(cityRequest.getCityNameList(), cityId);
-    }
-
-    private void saveAllCityNameMapping(List<String> cityNameList, Long cityId) {
-        List<CityNameMapping> cityNameMappingList = DtoToEntityMapping.getCityNameMapping(cityId, cityNameList);
-        cityNameMappingRepository.saveAll(cityNameMappingList);
-    }
-
-    private void saveAllCityPinCodeMapping(List<String> cityPinCodeList, Long cityId) {
-        List<CityPinCodeMapping> cityPinCodeMappingList = DtoToEntityMapping.getCityPinCodeMapping(cityId,
-                cityPinCodeList);
-        cityPinCodeMappingRepository.saveAll(cityPinCodeMappingList);
-    }
-
-    private void saveAllCityImageUrlMapping(List<String> cityImageUrlList, Long cityId) {
-        List<CityImageUrlMapping> cityImageUrlMappingList = DtoToEntityMapping.getCityImageUrlMapping(cityId,
-                cityImageUrlList);
-        cityImageUrlMappingRepository.saveAll(cityImageUrlMappingList);
     }
 
     public List<CityResponseDto> getCityList(String email) {
 
         authenticateUserWithEmail(email);
-        List<CityResponseDto> cityResponseList = new ArrayList<>();
         List<CityEntity> cityEntityList = cityEntityRepository.findAll();
-        cityEntityList.forEach(cityEntity -> {
 
-            List<String> cityImageUrlList = new ArrayList<>();
-            List<CityImageUrlMapping> cityImageUrlMappingList = cityImageUrlMappingRepository
-                    .findAllByCityId(cityEntity.getCityId());
-            cityImageUrlMappingList.forEach(cityImageUrlMapping -> {
-                cityImageUrlList.add(cityImageUrlMapping.getImageUrl());
-            });
-
-            CityResponseDto cityResponse = EntityToDtoMapping.getCityResponse(cityEntity, cityImageUrlList);
-            cityResponseList.add(cityResponse);
-        });
-
+        List<CityResponseDto> cityResponseList = EntityToDtoMapping.getCityResponseList(cityEntityList);
         log.info("CityResponseList : {}", cityResponseList);
         return cityResponseList;
     }
@@ -245,8 +208,6 @@ public class FirstAppService {
             CityEntity cityEntity = EntityToEntityMapping.updateCityEntity(cityRequest, cityEntityOptional.get());
             cityEntityRepository.save(cityEntity);
             log.info("Updated CityEntity for cityId: {}, CityEntity: {}", cityId, cityEntity);
-
-            updateCityDetails(cityRequest, cityId);
         }
         return getCityList(email);
     }
@@ -258,28 +219,8 @@ public class FirstAppService {
         if (cityEntityOptional.isPresent()) {
             log.info("Deleting CityEntity for cityId: {}, CityEntity: {}", cityId, cityEntityOptional.get());
             cityEntityRepository.deleteByCityId(cityId);
-
-            deleteCityDetails(cityId);
         }
         return getCityList(email);
-    }
-
-    private void deleteCityDetails(Long cityId) {
-        deleteAllCityImageUrlMapping(cityId);
-        deleteAllCityPinCodeMapping(cityId);
-        deleteAllCityNameMapping(cityId);
-    }
-
-    private void deleteAllCityNameMapping(Long cityId) {
-        cityNameMappingRepository.deleteAllByCityId(cityId);
-    }
-
-    private void deleteAllCityPinCodeMapping(Long cityId) {
-        cityPinCodeMappingRepository.deleteAllByCityId(cityId);
-    }
-
-    private void deleteAllCityImageUrlMapping(Long cityId) {
-        cityImageUrlMappingRepository.deleteAllByCityId(cityId);
     }
 
     public List<CategoryResponseDto> getCategoryList(String email) {
@@ -297,7 +238,6 @@ public class FirstAppService {
         CategoryEntity categoryEntity = DtoToEntityMapping.getCategoryEntity(categoryRequest);
         categoryEntity = categoryEntityRepository.save(categoryEntity);
         log.info("Added CategoryEntity: {}", categoryEntity);
-
         return getCategoryList(email);
     }
 
@@ -311,7 +251,6 @@ public class FirstAppService {
             categoryEntityRepository.save(categoryEntity);
             log.info("Updated categoryEntity for categoryId: {}, categoryEntity: {}", categoryId, categoryEntity);
         }
-
         return getCategoryList(email);
     }
 
@@ -324,7 +263,6 @@ public class FirstAppService {
                     categoryEntityOptional.get());
             categoryEntityRepository.deleteByCategoryId(categoryId);
         }
-
         return getCategoryList(email);
     }
 
@@ -354,7 +292,6 @@ public class FirstAppService {
         cityCategoryMapping = cityCategoryMappingRepository.save(cityCategoryMapping);
         log.info("Added cityCategoryMapping for cityId: {}, categoryId: {}, cityCategoryMapping: {}", cityId,
                 categoryId, cityCategoryMapping);
-
         return getCategoryListFromCity(email, cityId);
     }
 
@@ -371,7 +308,6 @@ public class FirstAppService {
             log.info("Updated cityCategoryMapping for CityId: {}, CategoryId : {}, CityCategoryMapping: {}", cityId,
                     categoryId, cityCategoryMapping);
         }
-
         return getCategoryListFromCity(email, cityId);
     }
 
@@ -386,7 +322,6 @@ public class FirstAppService {
                     categoryId, cityCategoryMappingOptional.get());
             cityCategoryMappingRepository.deleteByCityIdAndCategoryId(cityId, categoryId);
         }
-
         return getCategoryListFromCity(email, cityId);
     }
 
@@ -424,7 +359,6 @@ public class FirstAppService {
         ShopEntity shopEntity = DtoToEntityMapping.getShopEntity(cityId, shopRequest);
         shopEntity = shopEntityRepository.save(shopEntity);
         log.info("Added shopEntity for cityId: {}, shopEntity: {}", cityId, shopEntity);
-
         return getShopListFromCity(email, cityId);
     }
 
@@ -439,7 +373,6 @@ public class FirstAppService {
             shopEntityRepository.save(shopEntity);
             log.info("Updated shopEntity for CityId: {}, shopId : {}, shopEntity: {}", cityId, shopId, shopEntity);
         }
-
         return getShopListFromCity(email, cityId);
     }
 
@@ -452,7 +385,6 @@ public class FirstAppService {
                     shopEntityOptional.get());
             shopEntityRepository.deleteByCityIdAndShopId(cityId, shopId);
         }
-
         return getShopListFromCity(email, cityId);
     }
 
@@ -482,7 +414,6 @@ public class FirstAppService {
         cityCategoryShopMapping = cityCategoryShopMappingRepository.save(cityCategoryShopMapping);
         log.info("Added shopEntity for cityId: {}, categoryId: {}, shopId: {}, cityCategoryShopMapping: {}", cityId,
                 categoryId, shopId, cityCategoryShopMapping);
-
         return getShopListFromCityCategoryMapping(email, cityId, categoryId);
     }
 
@@ -502,7 +433,6 @@ public class FirstAppService {
                     "Updated cityCategoryMapping for CityId: {}, CategoryId : {}, ShopId : {}, cityCategoryShopMapping: {}",
                     cityId, categoryId, shopId, cityCategoryShopMapping);
         }
-
         return getShopListFromCityCategoryMapping(email, cityId, categoryId);
     }
 
@@ -519,7 +449,6 @@ public class FirstAppService {
                     cityId, categoryId, cityCategoryShopMappingOptional.get());
             cityCategoryShopMappingRepository.deleteByCityIdAndCategoryIdAndShopId(cityId, categoryId, shopId);
         }
-
         return getShopListFromCityCategoryMapping(email, cityId, categoryId);
     }
 }

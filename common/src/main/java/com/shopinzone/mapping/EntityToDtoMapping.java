@@ -31,7 +31,7 @@ public class EntityToDtoMapping {
 
     public static CityResponseDto getCityResponse(CityEntity cityEntity) {
         return CityResponseDto.builder().cityId(cityEntity.getCityId()).cityName(cityEntity.getCityName())
-                .description(cityEntity.getDescription()).build();
+                .description(cityEntity.getDescription()).cityImageUrl(cityEntity.getCityImageUrl()).build();
     }
 
     public static List<CityResponseDto> getCityResponseList(List<CityEntity> cityEntityList) {
@@ -55,9 +55,9 @@ public class EntityToDtoMapping {
                 .categoryName(categoryEntity.getCategoryName()).description(categoryEntity.getDescription()).build();
     }
 
-    public static CityResponseDto getCityResponse(CityEntity cityEntity, List<String> cityImageUrlList) {
+    public static CityResponseDto getCityResponse(CityEntity cityEntity, String cityImageUrl) {
         return CityResponseDto.builder().cityId(cityEntity.getCityId()).cityName(cityEntity.getCityName())
-                .description(cityEntity.getDescription()).cityImageUrlList(cityImageUrlList).build();
+                .description(cityEntity.getDescription()).cityImageUrl(cityImageUrl).build();
     }
 
     public static List<ShopResponseDto> getShopResponseList(List<ShopEntity> shopEntityList) {

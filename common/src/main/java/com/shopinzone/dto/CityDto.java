@@ -11,7 +11,5 @@ public class CityDto {
     String cityId;
     String cityName;
     String description;
-    List<String> cityImageUrlList;
-    List<String> cityNameList;
-    List<String> cityPinCodeList;
+    String cityImageUrl;
 }

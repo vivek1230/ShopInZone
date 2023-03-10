@@ -32,7 +32,8 @@ public class DtoToEntityMapping {
 
     public static CityEntity getCityEntity(CityRequestDto cityRequest) {
         return CityEntity.builder().cityName(cityRequest.getCityName()).description(cityRequest.getDescription())
-                .created(OffsetDateTime.now()).lastUpdated(OffsetDateTime.now()).build();
+                .cityImageUrl(cityRequest.getCityImageUrl()).created(OffsetDateTime.now())
+                .lastUpdated(OffsetDateTime.now()).build();
     }
 
     public static List<CityImageUrlMapping> getCityImageUrlMapping(Long cityId, List<String> cityImageUrlList) {
