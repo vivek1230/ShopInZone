@@ -1,0 +1,13 @@
+spring:
+  kafka:
+    fms-brokers: ${ENDGAME_BROKERS}
+    fms-enable-ssl: ${ENDGAME_SSL_ENABLED}
+    consumer:
+      group-id: order-ingestion-fmsorderhandler-qa
+      cancel-order-group-id: order-ingestion-fmscancellation-handler-qa
+    dlq-consumer:
+      group-id: order-ingestion-dlq-fms-order-handler-qa
+    producer:
+      fms-producer-topic: FULFILLMENT_STATUS_UPDATES_NONPROD_THOR
+      customer-cancellation-topic: endgame-oi-pt-cancellation-qa
+customer-po-topic: customer-purchase-orders-qa

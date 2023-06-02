@@ -1,0 +1,12 @@
+spring:
+  kafka:
+    consumer:
+      group-id: order-ingestion-fmsorderhandler-dev-v3
+      cancel-order-group-id: order-ingestion-fmscancellation-handler-dev
+    dlq-consumer:
+      group-id: order-ingestion-dlq-fms-order-handler-dev
+    producer:
+      fms-producer-topic: FULFILLMENT_STATUS_UPDATES_NONPROD_THOR
+      customer-cancellation-topic: endgame-oi-pt-cancellation-dev
+
+customer-po-topic: customer-purchase-orders-dev

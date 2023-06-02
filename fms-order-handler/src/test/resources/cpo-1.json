@@ -1,0 +1,2842 @@
+{
+  "id": "CustomerOrder",
+  "partitionKey": "9610_8872374382920",
+  "fmsOrder": {
+    "shipNode": {
+      "name": "NJ51 Pedricktown NJ FC 9610",
+      "id": "9615",
+      "forceShipNode": false,
+      "wmReferenceNumber": "9615",
+      "type": "DC",
+      "timeZone": "PST"
+    },
+    "carrierMethodId": "20",
+    "orderPlacedTimestamp": "2022-08-24T15:43:23+00:00",
+    "buId": "0",
+    "orderPriority": "0",
+    "tcNumber": "49976297284768072006752",
+    "purchaseOrderNo": "8872374382920",
+    "martId": "0",
+    "sourceOrderId": "200010175344564",
+    "paymentDetails": [
+      {
+        "paymentStatus": "AUTHORIZED",
+        "paymentReferenceId": "0431",
+        "paymentType": "CREDITCARD",
+        "last4": "0431",
+        "cardType": "MASTERCARD",
+        "billTo": {
+          "name": {
+            "firstName": "Virginia",
+            "lastName": "Kissamis"
+          },
+          "phone": "2243668500",
+          "email": "gkissamis@cntrmail.org"
+        },
+        "billingAddress": {
+          "city": "Prospect Heights",
+          "zip": "60070",
+          "state": "IL",
+          "poBox": false,
+          "apoFpo": false,
+          "country": "USA",
+          "line1": "1 N Schoenbeck Rd",
+          "addressType": "RESIDENTIAL"
+        },
+        "amountCollected": {
+          "currencyAmount": 0,
+          "currencyUnit": "USD"
+        }
+      }
+    ],
+    "customerOrderId": "200010175344564",
+    "fulfillmentLines": [
+      {
+        "lineType": "PHYSICAL",
+        "substitutionsAllowed": false,
+        "fulfillmentLineId": "1",
+        "sellerLineId": "1",
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 100
+        },
+        "itemDetails": {
+          "offerId": "D171737089B6496A94D6256D8534F07C",
+          "shipNodeItemId": "1344408",
+          "itemDesc": "Sun Liquid Laundry Detergent, Clean & Fresh, 250 Ounce, 178 Loads",
+          "gtin": "00072613708987",
+          "wupc": "0007261370898",
+          "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+          "upc": "072613708987",
+          "itemId": "16565094",
+          "imageUrl": "https://i5.walmartimages.com/asr/b6c1d6f6-9ba6-4e44-999c-597a78595fe4.80889a7394a0c296d901d132307e91e4.jpeg"
+        },
+        "chargeDetails": [
+          {
+            "chargeCategory": "PRODUCT",
+            "chargeName": "ItemPrice",
+            "chargeId": "ItemPrice",
+            "chargePerUnit": {
+              "currencyAmount": 9.97,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 997,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": null,
+            "discount": false,
+            "billable": false
+          },
+          {
+            "chargeCategory": "COST",
+            "chargeName": "COST",
+            "chargeId": "COST",
+            "chargePerUnit": {
+              "currencyAmount": 6.85,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 685,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": null,
+            "discount": false,
+            "billable": false
+          }
+        ],
+        "instructions": [
+          {
+            "type": "DELIVERY"
+          }
+        ],
+        "lineTotal": {
+          "currencyAmount": 997,
+          "currencyUnit": "USD"
+        },
+        "eventActive": false
+      }
+    ],
+    "lineDates": {
+      "preciseDeliveryDate": "2022-08-26T21:59:00+00:00",
+      "expectedShipDate": "2022-08-24T20:45:00+00:00",
+      "minDeliveryDate": "2022-08-29T21:59:00+00:00",
+      "maxDeliveryDate": "2022-08-29T21:59:00+00:00",
+      "orderProcessingDate": "2022-08-25T06:57:00+00:00"
+    },
+    "orderChannelId": "7C83B197D2D041CD9A7CE2A0E728E08F",
+    "customer": {
+      "contact": {
+        "name": {
+          "firstName": "Virginia",
+          "lastName": "Kissamis"
+        },
+        "phone": "2243668500",
+        "email": "gkissamis@cntrmail.org"
+      },
+      "membershipInfo": null
+    },
+    "orderOrigin": "0",
+    "shippingMethod": "EXPEDITED",
+    "shippingTo": {
+      "contact": {
+        "name": {
+          "firstName": "Community",
+          "lastName": "Resource Center FIND"
+        },
+        "phone": "6307449050",
+        "email": "gkissamis@cntrmail.org"
+      },
+      "address": {
+        "city": "Palatine",
+        "zip": "60074",
+        "state": "IL",
+        "line2": null,
+        "line3": null,
+        "line4": "60074|C085|Y|N",
+        "poBox": false,
+        "apoFpo": false,
+        "country": "USA",
+        "line1": "1585 N. Rand Road",
+        "addressType": "OFFICE"
+      }
+    },
+    "fulfillmentType": "S2H",
+    "totals": {
+      "subtotal": {
+        "currencyAmount": 997,
+        "currencyUnit": "USD"
+      },
+      "tax": {
+        "currencyAmount": 0,
+        "currencyUnit": "USD"
+      },
+      "grandTotal": {
+        "currencyAmount": 997,
+        "currencyUnit": "USD"
+      }
+    },
+    "boxingDetails": [
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-L4-39",
+        "boxName": "W-L4-39",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 29,
+          "breadth": 20,
+          "height": 15
+        },
+        "weight": {
+          "measurementValue": 5.134154275,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": false
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      }
+    ]
+  },
+  "fcid": "9610",
+  "purchaseOrderNo": "8872374382920",
+  "pickTicketDetails": [
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-L4-39",
+        "boxName": "W-L4-39",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 29,
+          "breadth": 20,
+          "height": 15
+        },
+        "weight": {
+          "measurementValue": 5.134154275,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": false
+      },
+      "pickTicketId": "96104993499A"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499B"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499C"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499D"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499E"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499F"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499G"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499H"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499I"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499J"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499K"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499L"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499M"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499N"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499O"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499P"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499Q"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499R"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499S"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499T"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499U"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499V"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499W"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499X"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499Y"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499Z"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AA"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AB"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AC"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AD"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AE"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AF"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AG"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AH"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AI"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AJ"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AK"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AL"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AM"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AN"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AO"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AP"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AQ"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AR"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AS"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AT"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AU"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AV"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AW"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0166",
+        "boxName": "W-PB0166",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 18.38,
+          "breadth": 13.95,
+          "height": 12.06
+        },
+        "weight": {
+          "measurementValue": 2.7354001731949995,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104993499AX"
+    }
+  ],
+  "status": "Accepted",
+  "_rid": "x2V0AKLgKp7YUQQAAAAAAA==",
+  "_self": "dbs/x2V0AA==/colls/x2V0AKLgKp4=/docs/x2V0AKLgKp7YUQQAAAAAAA==/",
+  "_etag": "\"0100705b-0000-0200-0000-630647230000\"",
+  "_attachments": "attachments/",
+  "_ts": 1661355811
+}

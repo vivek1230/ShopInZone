@@ -1,0 +1,88 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,prometheus
+
+  metrics:
+    enable:
+      jvm: true
+
+    export:
+      prometheus:
+        histogram-flavor: prometheus
+
+  endpoint:
+    health:
+      group:
+        liveness:
+          include: "*"
+        readiness:
+          include: "*"
+      probes:
+        enabled: true
+azure:
+  cosmos:
+    uri: ${COSMOS_ENDPOINT}
+    key: ${COSMOS_KEY}
+    database: order-ingestion
+
+application:
+  data:
+    pickTicketIDProvider: pt_id_seq # the SQL Sequence that will generate IDs for PickTicket.
+spring:
+  jmx:
+    enabled: true
+  config:
+    import: optional:configtree:./secrets/,optional:configtree:/etc/secrets/
+  sql:
+    init:
+      mode: always # This is to always initialize a database using scripts as script-based initialization is performed by default only for embedded databases.
+
+  datasource: # Note: spring.datasource will have to be removed once AAD for SQL is configured.
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    initialization-mode: always # this is to indicate Spring Boot to always generate a db schema using `schema.sql` file.
+  jpa:
+    defer-datasource-initialization: true # This will ensure, that after Hibernate schema creation is performed then additionally schema.sql is read for any additional schema changes and data.sql is executed to populate the database.
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServer2008Dialect
+      ddl-auto: none
+      show-sql: true
+      generate-ddl: false
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl # This is necessary to map property names of DAOs with the ones in SQL DB Tables.
+  kafka:
+    bootstrap-servers: ${ENDGAME_BROKERS}
+    producer:
+      fms-producer-topic: FULFILLMENT_STATUS_UPDATES_NONPROD_THOR
+      customer-cancellation-topic: endgame-oi-pt-cancellation-dev
+    consumer:
+      group-id: order-ingestion-fmsorderhandler-local
+      cancel-order-group-id: order-ingestion-fmscancellation-handler-local
+      retries: 10
+      retry-interval: 5000
+    dlq-consumer:
+      ssl-enabled: ${ENDGAME_SSL_ENABLED}
+      bootstrap-servers: ${ENDGAME_BROKERS}
+      group-id: order-ingestion-dlq-fms-order-handler-dev
+      topic: ${DLQ_TOPIC}
+
+customer-po-topic: customer-purchase-orders-dev
+
+fms-configs:
+  ship-node-to-fcid-map:
+    "9615": "9610"
+    "7439": "7441"
+    "28021": "7552"
+    "29821": "3006"
+    "31341": "3124"
+
+inventory-projection:
+  protocol: http
+  host: ${HOST_IP}
+  endpoint: ${ENDPOINT_IP}
+  securedEndpoint: ${SECURED_ENDPOINT_IP}
+  isAuthEnabled: ${AUTH_ENABLED_IP}
+  whitelisted-fc: ${IP_BC_WHITELISTED_FC}
+  auth-header-name: ${AUTH_HEADER_NAME_IP}
+  auth-token: ${AUTH_TOKEN_IP}

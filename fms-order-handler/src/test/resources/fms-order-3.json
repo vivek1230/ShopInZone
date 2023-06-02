@@ -1,0 +1,192 @@
+{
+  "eventName": "FULFILLMENT_ORDER_CREATE",
+  "eventSource": "WMT_FMS",
+  "eventId": "37607d58-861e-4acd-8d6e-d1376c34e386",
+  "eventPayload": {
+    "shipNode": {
+      "name": "NV1 Sparks NV Jet FC 9204",
+      "forceShipNode": false,
+      "id": "7728",
+      "wmReferenceNumber": "7728",
+      "type": "DC",
+      "timeZone": "PST"
+    },
+    "carrierMethodId": "4368",
+    "orderPlacedTimestamp": "2022-05-06T16:21:30.000Z",
+    "buId": "0",
+    "orderPriority": "0",
+    "tcNumber": "76555450321458434596",
+    "purchaseOrderNo": "9871277156610",
+    "martId": "0",
+    "sourceOrderId": "3972260078974",
+    "paymentDetails": [
+      {
+        "billTo": {
+          "name": {
+            "firstName": "Raynox",
+            "lastName": "Corporation"
+          },
+          "phone": "9176911185",
+          "email": "mohammad.uddin7789@gmail.com"
+        },
+        "paymentStatus": "AUTHORIZED",
+        "billingAddress": {
+          "city": "LONG ISLAND CITY",
+          "zip": "11103",
+          "state": "NY",
+          "poBox": false,
+          "apoFpo": false,
+          "country": "USA",
+          "line1": "3275 Steinway street suite 201",
+          "addressType": "RESIDENTIAL"
+        },
+        "paymentReferenceId": "1305",
+        "paymentType": "CREDITCARD",
+        "amountCollected": {
+          "currencyAmount": 0,
+          "currencyUnit": "USD"
+        },
+        "last4": "1305",
+        "cardType": "VISA"
+      }
+    ],
+    "customerOrderId": "3972260078965",
+    "fulfillmentLines": [
+      {
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 1
+        },
+        "itemDetails": {
+          "offerId": "3D95A36B3BA1474386EC2802AB2B4192",
+          "shipNodeItemId": "0000565668902",
+          "itemDesc": "Augason Farms Orange Delight Drink Mix 5 lbs 11 oz No. 10 Can",
+          "gtin": "00000946500572",
+          "wupc": "0000094650057",
+          "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+          "upc": "000946500572",
+          "itemId": "22985159",
+          "imageUrl": "https://i5.walmartimages.com/asr/2900b191-083c-4fcd-88cb-b5018bc6ffc6_1.b76442bc1a385db9cd400ac5ac96d99d.jpeg"
+        },
+        "lineType": "PHYSICAL",
+        "substitutionsAllowed": false,
+        "chargeDetails": [
+          {
+            "isDiscount": false,
+            "chargePerUnit": {
+              "currencyAmount": 5.99,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 5.99,
+              "currencyUnit": "USD"
+            },
+            "chargeCategory": "SHIPPING",
+            "isBillable": false,
+            "chargeName": "Shipping",
+            "chargeId": "Shipping"
+          },
+          {
+            "isDiscount": false,
+            "chargePerUnit": {
+              "currencyAmount": 17.16,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 17.16,
+              "currencyUnit": "USD"
+            },
+            "chargeCategory": "PRODUCT",
+            "isBillable": false,
+            "chargeName": "ItemPrice",
+            "chargeId": "ItemPrice"
+          },
+          {
+            "isDiscount": false,
+            "chargePerUnit": {
+              "currencyAmount": 11.98,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 11.98,
+              "currencyUnit": "USD"
+            },
+            "chargeCategory": "COST",
+            "isBillable": false,
+            "chargeName": "COST",
+            "chargeId": "COST"
+          }
+        ],
+        "fulfillmentLineId": "1",
+        "isEventActive": false,
+        "sellerLineId": "1",
+        "instructions": [
+          {
+            "type": "DELIVERY"
+          }
+        ],
+        "lineTotal": {
+          "currencyAmount": 23.15,
+          "currencyUnit": "USD"
+        }
+      }
+    ],
+    "lineDates": {
+      "preciseDeliveryDate": "2022-05-08T19:00:00.000Z",
+      "expectedShipDate": "2022-05-07T11:00:00.000Z",
+      "minDeliveryDate": "2022-05-07T19:00:00.000Z",
+      "maxDeliveryDate": "2022-05-07T19:00:00.000Z",
+      "orderProcessingDate": "2022-05-08T06:57:00.000Z"
+    },
+    "orderChannelId": "7C83B197D2D041CD9A7CE2A0E728E08F",
+    "customer": {
+      "contact": {
+        "name": {
+          "firstName": "MD M",
+          "lastName": "Hasan Moula"
+        },
+        "phone": "9176911185",
+        "email": "mohammad.uddin7789@gmail.com"
+      }
+    },
+    "orderOrigin": "0",
+    "shippingMethod": "RUSH",
+    "shippingTo": {
+      "contact": {
+        "name": {
+          "firstName": "Adrian",
+          "lastName": "Reyes"
+        },
+        "phone": "3142829402",
+        "email": "mohammad.uddin7789@gmail.com"
+      },
+      "address": {
+        "city": "Shafter",
+        "zip": "93263",
+        "state": "CA",
+        "line4": "93263|C003|Y|N",
+        "poBox": false,
+        "apoFpo": false,
+        "country": "USA",
+        "line1": "510 Willow St",
+        "addressType": "RESIDENTIAL"
+      }
+    },
+    "fulfillmentType": "S2H",
+    "totals": {
+      "subtotal": {
+        "currencyAmount": 17.16,
+        "currencyUnit": "USD"
+      },
+      "tax": {
+        "currencyAmount": 0,
+        "currencyUnit": "USD"
+      },
+      "grandTotal": {
+        "currencyAmount": 23.15,
+        "currencyUnit": "USD"
+      }
+    }
+  },
+  "eventTime": "2022-05-06T16:35:34.101+00:00"
+}
