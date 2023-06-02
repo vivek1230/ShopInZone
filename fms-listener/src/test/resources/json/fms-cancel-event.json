@@ -1,0 +1,42 @@
+{
+  "header": {
+    "eventName": "FULFILLMENT_ORDER_CANCEL",
+    "isFMSIsolatedStressTestOrder": false,
+    "timestamp": "1665527632155",
+    "schemaVersionNo": "1",
+    "martId": "0",
+    "isStressTestOrder": false,
+    "eventID": "65aef4db-3cd1-4aea-bcf5-e849790a70eb",
+    "producerName": "FMS",
+    "frId": "200010226338802",
+    "businessUnitId": "0"
+  },
+  "payload": {
+    "buId": "0",
+    "martId": "0",
+    "purchaseOrderNo": "3862309610324",
+    "customerOrderId": "222214545",
+    "sourceOrderId": "3062110113055",
+    "fulfillmentLines": [
+      {
+        "fulfillmentType": "S2H",
+        "lineId": "1",
+        "quantity": {
+          "measurementValue": 1,
+          "unitOfMeasure": "EA"
+        }
+      }
+    ],
+    "orderLines": [
+    ],
+    "orderPlacedTimestamp": "2021-02-04T05:06:47+00:00",
+    "shipNode": {
+      "forceShipNode": false,
+      "id": "9615",
+      "name": "NJ51 Chino FC 7049",
+      "timeZone": "PST",
+      "type": "DC",
+      "wmReferenceNumber": "8556"
+    }
+  }
+}

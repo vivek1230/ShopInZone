@@ -1,0 +1,51 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,prometheus
+
+  metrics:
+    enable:
+      jvm: true
+
+    export:
+      prometheus:
+        histogram-flavor: prometheus
+
+  endpoint:
+    health:
+      group:
+        liveness:
+          include: "*"
+        readiness:
+          include: "*"
+      probes:
+        enabled: true
+azure:
+  cosmos:
+    uri: ${COSMOS_ENDPOINT}
+    key: ${COSMOS_KEY}
+    database: order-ingestion
+
+spring:
+  jmx:
+    enabled: true
+  config:
+    import: optional:configtree:./secrets/,optional:configtree:/etc/secrets/
+  kafka:
+    bootstrap-servers: ${FMS_BROKERS}
+    consumer:
+      group-id: order-ingestion-fms-listener-dev
+      fms-consumer-topic: FULFILLMENT_ORDER_OUTBOUND_NONPROD_THOR
+    producer:
+      fms-producer-topic: FULFILLMENT_STATUS_UPDATES_NONPROD_THOR
+      packman-input-topic: thor-packman-input-dev
+      endgame-producer-topic: customer-purchase-orders-dev
+
+listener-config:
+  ship-node-to-fcid:
+    9615: 9610
+    7439: 7441
+    28021: 7552
+    29821: 3006
+    31341: 3124

@@ -1,0 +1,14 @@
+profiles:
+  - git://sct-thor:order-ingestion:main:kitt-module-deployment
+
+build:
+  artifact: sql-scripts-runner
+  docker:
+    app:
+      buildArgs:
+        artifact: sql-scripts-runner
+        modulePath: sql-scripts-runner
+
+
+deploy:
+  skip: true

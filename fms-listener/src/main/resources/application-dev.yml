@@ -1,0 +1,6 @@
+spring:
+  kafka:
+    consumer:
+      group-id: order-ingestion-fms-listener-dev
+    producer:
+      packman-input-topic: thor-packman-input-qa

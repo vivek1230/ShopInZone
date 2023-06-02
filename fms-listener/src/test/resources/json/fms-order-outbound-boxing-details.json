@@ -1,0 +1,230 @@
+{
+  "eventId": "092d7a89-da55-454b-8b85-1574016f7588",
+  "eventName": "FULFILLMENT_ORDER_CREATE",
+  "eventSource": "Thor",
+  "eventTime": "2022-06-01T03:22:23.980+00:00",
+  "eventPayload": {
+    "buId": "0",
+    "martId": "0",
+    "orderChannelId": "455A2F43226F41319399794332C71B7F",
+    "purchaseOrderNo": "108715325337528",
+    "sourceOrderId": "100000003511853",
+    "customerOrderId": "100000003511853",
+    "orderPlacedTimestamp": "2022-06-01T03:22:07.000Z",
+    "orderPriority": "0",
+    "orderOrigin": "0",
+    "tcNumber": "47794686005880361328681",
+    "shipNode": {
+      "id": "9615",
+      "name": "KS1 Edgerton KS Jet FC 9202",
+      "type": "DC",
+      "timeZone": "PST",
+      "forceShipNode": false,
+      "wmReferenceNumber": "8511"
+    },
+    "fulfillmentType": "S2H",
+    "shippingMethod": "EXPEDITED",
+    "carrierMethodId": "31",
+    "lineDates": {
+      "minDeliveryDate": "2022-06-02T19:00:00.000Z",
+      "maxDeliveryDate": "2022-06-02T19:00:00.000Z",
+      "orderProcessingDate": "2022-06-02T06:57:00.000Z",
+      "preciseDeliveryDate": "2022-06-01T19:00:00.000Z",
+      "expectedShipDate": "2022-06-01T17:00:00.000Z"
+    },
+    "customer": {
+      "contact": {
+        "name": {
+          "firstName": "firstName",
+          "lastName": "secondName"
+        },
+        "phone": "1234567890",
+        "email": "fc_delivery_419971512_32144@email.com"
+      }
+    },
+    "totals": {
+      "subtotal": {
+        "currencyAmount": 5,
+        "currencyUnit": "USD"
+      },
+      "tax": {
+        "currencyAmount": 0.47,
+        "currencyUnit": "USD"
+      },
+      "grandTotal": {
+        "currencyAmount": 11.46,
+        "currencyUnit": "USD"
+      }
+    },
+    "shippingTo": {
+      "contact": {
+        "name": {
+          "firstName": "firstName",
+          "lastName": "secondName"
+        },
+        "phone": "5103295632",
+        "email": "fc_delivery_419971512_32144@email.com"
+      },
+      "address": {
+        "line1": "1395 Leeward Dr",
+        "line4": "95122|C013|D|U",
+        "apoFpo": false,
+        "poBox": false,
+        "city": "San Jose",
+        "state": "CA",
+        "country": "USA",
+        "zip": "95122",
+        "addressType": "RESIDENTIAL"
+      }
+    },
+    "paymentDetails": [
+      {
+        "paymentType": "CREDITCARD",
+        "cardType": "VISA",
+        "last4": "0005",
+        "amountCollected": {
+          "currencyAmount": 0,
+          "currencyUnit": "USD"
+        },
+        "paymentReferenceId": "0005",
+        "billTo": {
+          "name": {
+            "firstName": "firstName",
+            "lastName": "secondName"
+          },
+          "phone": "1234567890",
+          "email": "fc_delivery_419971512_32144@email.com"
+        },
+        "billingAddress": {
+          "line1": "1395 Leeward Dr",
+          "line2": "APT",
+          "apoFpo": false,
+          "poBox": false,
+          "city": "San Jose",
+          "state": "CA",
+          "country": "USA",
+          "zip": "95122",
+          "addressType": "RESIDENTIAL"
+        },
+        "paymentStatus": "AUTHORIZED"
+      }
+    ],
+    "fulfillmentLines": [
+      {
+        "fulfillmentLineId": "1",
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 1
+        },
+        "itemDetails": {
+          "itemId": "419971512",
+          "sellerId": "455A2F43226F41319399794332C71B7F",
+          "shipNodeItemId": "419971512",
+          "upc": "193159050368",
+          "wupc": "0019315905036",
+          "gtin": "00193159050368",
+          "itemDesc": "Champion",
+          "offerId": "6C473F4DCE8C421991B759ABD0F06D76",
+          "imageUrl": "https://i5-qa.walmartimages.com/asr/8531361f-1d99-4242-93d4-a313c61023ca.21f03b26a26742321979e7d1c4a75357.jpeg"
+        },
+        "lineTotal": {
+          "currencyAmount": 11.46,
+          "currencyUnit": "USD"
+        },
+        "chargeDetails": [
+          {
+            "chargeCategory": "SHIPPING",
+            "chargeName": "Shipping",
+            "chargeId": "Shipping",
+            "chargePerUnit": {
+              "currencyAmount": 5.99,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 5.99,
+              "currencyUnit": "USD"
+            },
+            "isDiscount": false,
+            "isBillable": false
+          },
+          {
+            "chargeCategory": "PRODUCT",
+            "chargeName": "ItemPrice",
+            "chargeId": "ItemPrice",
+            "chargePerUnit": {
+              "currencyAmount": 5,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 5,
+              "currencyUnit": "USD"
+            },
+            "isDiscount": false,
+            "taxDetails": {
+              "taxPerUnit": {
+                "currencyAmount": 0.47,
+                "currencyUnit": "USD"
+              },
+              "taxPerLine": {
+                "currencyAmount": 0.47,
+                "currencyUnit": "USD"
+              }
+            },
+            "isBillable": false
+          },
+          {
+            "chargeCategory": "COST",
+            "chargeName": "COST",
+            "chargeId": "COST",
+            "chargePerUnit": {
+              "currencyAmount": 2.0,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 2.0,
+              "currencyUnit": "USD"
+            },
+            "isDiscount": false,
+            "isBillable": false
+          }
+        ],
+        "sellerLineId": "1",
+        "substitutionsAllowed": false,
+        "instructions": [
+          {
+            "text": "DOOR STEP DELIVERY",
+            "type": "DELIVERY"
+          }
+        ],
+        "lineType": "PHYSICAL",
+        "isEventActive": false
+      }
+    ],
+    "boxingDetails": [
+      {
+        "boxInstanceId": "T1|178eddab684|39330",
+        "boxName": "T1",
+        "boxDimensions": {
+          "length": 10,
+          "breadth": 5,
+          "height": 8,
+          "unitOfMeasure": "INCH"
+        },
+        "weight": {
+          "unitOfMeasure": "LB",
+          "measurementValue": 10
+        },
+        "boxType": "Box",
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

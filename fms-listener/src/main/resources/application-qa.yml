@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: ${ENDGAME_BROKERS}
+    fms-brokers: ${ENDGAME_BROKERS}
+    fms-enable-ssl: ${ENDGAME_SSL_ENABLED}
+    consumer:
+      group-id: order-ingestion-fms-listener-qa
+    producer:
+      packman-input-topic: thor-packman-input-qa
+      endgame-producer-topic: customer-purchase-orders-qa

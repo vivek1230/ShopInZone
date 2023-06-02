@@ -1,0 +1,33 @@
+{
+  "eventId": "108715325337528-LB",
+  "eventName": "ORDER_STATUS_UPDATE",
+  "eventSource": "THOR",
+  "eventPayload": {
+    "buId": "0",
+    "martId": "0",
+    "purchaseOrderNo": "108715325337528",
+    "pickTicketNumber": null,
+    "purchaseOrderLines": [
+      {
+        "fulfillmentLineId": "1",
+        "status": "LB",
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 2
+        },
+        "changeReason": "255",
+        "modifiedDate": "2022-06-01T19:34:46Z"
+      },
+      {
+        "fulfillmentLineId": "2",
+        "status": "LB",
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 3
+        },
+        "changeReason": "255",
+        "modifiedDate": "2022-06-28T11:30:15Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+spring:
+  jmx:
+    enabled: true
+  kafka:
+    consumer:
+      group-id: order-ingestion-fms-listener-stage
+    producer:
+      packman-input-topic: thor-packman-input-stg
+      endgame-producer-topic: customer-purchase-orders-stg

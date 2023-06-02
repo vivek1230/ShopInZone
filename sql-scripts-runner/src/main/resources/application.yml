@@ -1,0 +1,17 @@
+spring:
+  config:
+    import: optional:configtree:./secrets/,optional:configtree:/etc/secrets/
+  sql:
+    init:
+      mode: always # This is to always initialize a database using scripts as script-based initialization is performed by default only for embedded databases.
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    initialization-mode: always # this is to indicate Spring Boot to always generate a db schema using `schema.sql` file.
+  jpa:
+    hibernate:
+      ddl-auto: none
+      dialect: org.hibernate.dialect.SQLServer2008Dialect
+      show-sql: true
+      generate-ddl: false
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
