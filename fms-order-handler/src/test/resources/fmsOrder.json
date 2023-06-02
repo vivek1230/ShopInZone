@@ -1,0 +1,187 @@
+{
+  "eventName": "FULFILLMENT_ORDER_CREATE",
+  "eventSource": "WMT_FMS",
+  "eventId": "66c54789-9583-45e9-9641-4f69c0536613",
+  "eventPayload": {
+    "shipNode": {
+      "name": "IND2 WFS Plainfield IN 3115",
+      "forceShipNode": false,
+      "id": "31131",
+      "wmReferenceNumber": "31131",
+      "type": "DC",
+      "timeZone": "PST"
+    },
+    "carrierMethodId": "222",
+    "orderPlacedTimestamp": "2022-03-25T20:21:35.000Z",
+    "buId": "0",
+    "orderPriority": "0",
+    "tcNumber": "95575647613568076049782",
+    "purchaseOrderNo": "9870856367733",
+    "martId": "0",
+    "sourceOrderId": "3552251314940",
+    "paymentDetails": [
+      {
+        "billTo": {
+          "name": {
+            "firstName": "Iovanna",
+            "lastName": "Velez"
+          },
+          "phone": "5203131187",
+          "email": "iovannav@gmail.com"
+        },
+        "paymentStatus": "AUTHORIZED",
+        "billingAddress": {
+          "city": "Green Valley",
+          "zip": "85614",
+          "state": "AZ",
+          "poBox": false,
+          "apoFpo": false,
+          "country": "USA",
+          "line1": "140 E Calle Trona",
+          "addressType": "RESIDENTIAL"
+        },
+        "paymentReferenceId": "6832",
+        "paymentType": "CREDITCARD",
+        "amountCollected": {
+          "currencyAmount": 0,
+          "currencyUnit": "USD"
+        },
+        "last4": "6832",
+        "cardType": "VISA"
+      }
+    ],
+    "customerOrderId": "3552251314940",
+    "fulfillmentLines": [
+      {
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 1
+        },
+        "itemDetails": {
+          "offerId": "05C4834966574C4AACCFCEFE547ACAF0",
+          "shipNodeItemId": "TCL-Replacement-Roku-4-v2",
+          "itemDesc": "Xtrasaver Replacement Remote for All TCL Roku TV with Sling and Hulu Shortcuts - NOT COMPATIBLE WITH ROKU STICK OR ROKU BOX",
+          "gtin": "00301636533215",
+          "wupc": "0030163653321",
+          "sellerId": "0B224E1D7D2643E284AA7FCDAB4D6A05",
+          "upc": "301636533215",
+          "itemId": "174095664",
+          "imageUrl": "https://i5.walmartimages.com/asr/f5be0b9a-2e18-4d5f-89ce-9ef110dec58d.10235f13162cb5f7a35ff609ea9a0f8e.jpeg"
+        },
+        "lineType": "MP",
+        "substitutionsAllowed": false,
+        "chargeDetails": [
+          {
+            "isDiscount": false,
+            "chargePerUnit": {
+              "currencyAmount": 7.99,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 7.99,
+              "currencyUnit": "USD"
+            },
+            "chargeCategory": "PRODUCT",
+            "isBillable": false,
+            "taxDetails": {
+              "taxPerUnit": {
+                "currencyAmount": 0.65,
+                "currencyUnit": "USD"
+              },
+              "taxPerLine": {
+                "currencyAmount": 0.65,
+                "currencyUnit": "USD"
+              }
+            },
+            "chargeName": "ItemPrice",
+            "chargeId": "ItemPrice"
+          },
+          {
+            "isDiscount": false,
+            "chargePerUnit": {
+              "currencyAmount": 1,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 1,
+              "currencyUnit": "USD"
+            },
+            "chargeCategory": "COST",
+            "isBillable": false,
+            "chargeName": "COST",
+            "chargeId": "COST"
+          }
+        ],
+        "fulfillmentLineId": "2",
+        "isEventActive": false,
+        "sellerLineId": "4",
+        "instructions": [
+          {
+            "type": "DELIVERY"
+          }
+        ],
+        "lineTotal": {
+          "currencyAmount": 8.64,
+          "currencyUnit": "USD"
+        }
+      }
+    ],
+    "lineDates": {
+      "preciseDeliveryDate": "2022-03-30T19:00:00.000Z",
+      "expectedShipDate": "2022-03-28T20:30:00.000Z",
+      "minDeliveryDate": "2022-03-30T19:00:00.000Z",
+      "maxDeliveryDate": "2022-03-30T19:00:00.000Z",
+      "orderProcessingDate": "2022-03-29T06:57:00.000Z"
+    },
+    "orderChannelId": "7C83B197D2D041CD9A7CE2A0E728E08F",
+    "customer": {
+      "contact": {
+        "name": {
+          "firstName": "iovanna",
+          "lastName": "velez"
+        },
+        "phone": "5203131187",
+        "email": "iovannav@gmail.com"
+      }
+    },
+    "orderOrigin": "0",
+    "shippingMethod": "EXPEDITED",
+    "shippingTo": {
+      "contact": {
+        "name": {
+          "firstName": "Iovanna",
+          "lastName": "Velez"
+        },
+        "phone": "5203131187",
+        "email": "iovannav@gmail.com"
+      },
+      "address": {
+        "city": "green valley",
+        "zip": "85614",
+        "state": "AZ",
+        "line4": "85614|C074|Y|N",
+        "poBox": false,
+        "apoFpo": false,
+        "country": "USA",
+        "line1": "140 e calle trona",
+        "addressType": "RESIDENTIAL"
+      }
+    },
+    "fulfillmentType": "S2H",
+    "totals": {
+      "subtotal": {
+        "currencyAmount": 7.99,
+        "currencyUnit": "USD"
+      },
+      "tax": {
+        "currencyAmount": 0.65,
+        "currencyUnit": "USD"
+      },
+      "grandTotal": {
+        "currencyAmount": 8.64,
+        "currencyUnit": "USD"
+      }
+    }
+  },
+  "eventTime": "2022-03-25T22:51:39.027+00:00"
+}

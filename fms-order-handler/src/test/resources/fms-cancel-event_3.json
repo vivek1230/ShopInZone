@@ -1,0 +1,36 @@
+{
+  "buId": "0",
+  "martId": "0",
+  "purchaseOrderNo": "4871836418414",
+  "customerOrderId": "200010050252729",
+  "sourceOrderId": "200010050252729",
+  "fulfillmentLines": [
+    {
+      "fulfillmentType": "S2H",
+      "lineId": "4",
+      "quantity": {
+        "measurementValue": 2,
+        "unitOfMeasure": "EA"
+      }
+    },
+    {
+      "fulfillmentType": "S2H",
+      "lineId": "10",
+      "quantity": {
+        "measurementValue": 1,
+        "unitOfMeasure": "EA"
+      }
+    }
+  ],
+  "orderLines": [
+  ],
+  "orderPlacedTimestamp": "2021-02-04T05:06:47+00:00",
+  "shipNode": {
+    "forceShipNode": false,
+    "id": "9615",
+    "name": "NJ51 Chino FC 7049",
+    "timeZone": "PST",
+    "type": "DC",
+    "wmReferenceNumber": "9615"
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "eventId": "b9690253-fa36-4e3b-9176-4fb0b0df635b",
+  "eventName": "FULFILLMENT_ORDER_CREATE",
+  "eventSource": "WMT_FMS",
+  "eventTime": "2022-04-18T09:57:18.002+00:00",
+  "eventPayload": {
+    "shipNode": {
+      "name": "KS1 Edgerton KS Jet FC 9202",
+      "id": "9615",
+      "forceShipNode": false,
+      "wmReferenceNumber": "9615",
+      "type": "DC",
+      "timeZone": "PST"
+    },
+    "carrierMethodId": "31",
+    "orderPlacedTimestamp": "2022-04-17T21:02:36.000Z",
+    "buId": "0",
+    "orderPriority": "0",
+    "tcNumber": "46611942966463924919245",
+    "purchaseOrderNo": "108710824602775",
+    "martId": "0",
+    "sourceOrderId": "200001001570090",
+    "paymentDetails": [
+      {
+        "paymentStatus": "AUTHORIZED",
+        "paymentReferenceId": "0005",
+        "paymentType": "CREDITCARD",
+        "last4": "0005",
+        "cardType": "VISA",
+        "billTo": {
+          "name": {
+            "firstName": "alex",
+            "lastName": "test"
+          },
+          "phone": "3211232112",
+          "email": "fc_delivery_checkitemhealth31@walmart.com"
+        },
+        "billingAddress": {
+          "city": "Mesa",
+          "zip": "85213",
+          "state": "AZ",
+          "poBox": false,
+          "apoFpo": false,
+          "country": "USA",
+          "line1": "2730 E McKellips Rd",
+          "addressType": "RESIDENTIAL"
+        },
+        "amountCollected": {
+          "currencyAmount": 0,
+          "currencyUnit": "USD"
+        }
+      }
+    ],
+    "customerOrderId": "200001001570090",
+    "fulfillmentLines": [
+      {
+        "lineType": "PHYSICAL",
+        "substitutionsAllowed": false,
+        "fulfillmentLineId": "1",
+        "sellerLineId": "1",
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 1
+        },
+        "itemDetails": {
+          "offerId": "6C473F4DCE8C421991B759ABD0F06D76",
+          "shipNodeItemId": "419971512",
+          "itemDesc": "Champion",
+          "gtin": "00193159050371",
+          "wupc": "00193159050371",
+          "sellerId": "455A2F43226F41319399794332C71B7F",
+          "upc": "193159050368",
+          "itemId": "419971512",
+          "imageUrl": "https://i5-qa.walmartimages.com/asr/8531361f-1d99-4242-93d4-a313c61023ca.21f03b26a26742321979e7d1c4a75357.jpeg"
+        },
+        "chargeDetails": [
+          {
+            "chargeCategory": "SHIPPING",
+            "chargeName": "Shipping",
+            "chargeId": "Shipping",
+            "chargePerUnit": {
+              "currencyAmount": 5.99,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 5.99,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": null,
+            "discount": false,
+            "billable": false
+          },
+          {
+            "chargeCategory": "PRODUCT",
+            "chargeName": "ItemPrice",
+            "chargeId": "ItemPrice",
+            "chargePerUnit": {
+              "currencyAmount": 5,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 5,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": {
+              "taxPerUnit": {
+                "currencyAmount": 0.42,
+                "currencyUnit": "USD"
+              },
+              "taxPerLine": {
+                "currencyAmount": 0.42,
+                "currencyUnit": "USD"
+              }
+            },
+            "discount": false,
+            "billable": false
+          },
+          {
+            "chargeCategory": "COST",
+            "chargeName": "COST",
+            "chargeId": "COST",
+            "chargePerUnit": {
+              "currencyAmount": 2,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 2,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": null,
+            "discount": false,
+            "billable": false
+          }
+        ],
+        "instructions": [
+          {
+            "type": "DELIVERY"
+          }
+        ],
+        "lineTotal": {
+          "currencyAmount": 11.41,
+          "currencyUnit": "USD"
+        },
+        "eventActive": false
+      },
+      {
+        "lineType": "PHYSICAL",
+        "substitutionsAllowed": false,
+        "fulfillmentLineId": "2",
+        "sellerLineId": "2",
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 2
+        },
+        "itemDetails": {
+          "offerId": "6C473F4DCE8C421991B759ABD0F06D76",
+          "shipNodeItemId": "419971512",
+          "itemDesc": "Champion",
+          "gtin": "00193159050369",
+          "wupc": "00193159050369",
+          "sellerId": "455A2F43226F41319399794332C71B7F",
+          "upc": "193159050368",
+          "itemId": "419971513",
+          "imageUrl": "https://i5-qa.walmartimages.com/asr/8531361f-1d99-4242-93d4-a313c61023ca.21f03b26a26742321979e7d1c4a75357.jpeg"
+        },
+        "chargeDetails": [
+          {
+            "chargeCategory": "SHIPPING",
+            "chargeName": "Shipping",
+            "chargeId": "Shipping",
+            "chargePerUnit": {
+              "currencyAmount": 5.99,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 5.99,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": null,
+            "discount": false,
+            "billable": false
+          },
+          {
+            "chargeCategory": "PRODUCT",
+            "chargeName": "ItemPrice",
+            "chargeId": "ItemPrice",
+            "chargePerUnit": {
+              "currencyAmount": 5,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 5,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": {
+              "taxPerUnit": {
+                "currencyAmount": 0.42,
+                "currencyUnit": "USD"
+              },
+              "taxPerLine": {
+                "currencyAmount": 0.42,
+                "currencyUnit": "USD"
+              }
+            },
+            "discount": false,
+            "billable": false
+          },
+          {
+            "chargeCategory": "COST",
+            "chargeName": "COST",
+            "chargeId": "COST",
+            "chargePerUnit": {
+              "currencyAmount": 2,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 2,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": null,
+            "discount": false,
+            "billable": false
+          }
+        ],
+        "instructions": [
+          {
+            "type": "DELIVERY"
+          }
+        ],
+        "lineTotal": {
+          "currencyAmount": 11.41,
+          "currencyUnit": "USD"
+        },
+        "eventActive": false
+      }
+    ],
+    "lineDates": {
+      "preciseDeliveryDate": "2022-04-18T22:59:00.000Z",
+      "expectedShipDate": "2022-04-18T17:00:00.000Z",
+      "minDeliveryDate": "2022-04-21T22:59:00.000Z",
+      "maxDeliveryDate": "2022-04-21T22:59:00.000Z",
+      "orderProcessingDate": "2022-04-19T06:57:00.000Z"
+    },
+    "orderChannelId": "7C83B197D2D041CD9A7CE2A0E728E08F",
+    "customer": {
+      "contact": {
+        "name": {
+          "firstName": "alex",
+          "lastName": "test"
+        },
+        "phone": "3211232112",
+        "email": "fc_delivery_checkitemhealth31@walmart.com"
+      },
+      "membershipInfo": null
+    },
+    "orderOrigin": "0",
+    "shippingMethod": "EXPEDITED",
+    "shippingTo": {
+      "contact": {
+        "name": {
+          "firstName": "alex",
+          "lastName": "test"
+        },
+        "phone": "5103295632",
+        "email": "fc_delivery_checkitemhealth31@walmart.com"
+      },
+      "address": {
+        "city": "Mesa",
+        "zip": "85213",
+        "state": "AZ",
+        "line4": "85213|||",
+        "poBox": false,
+        "apoFpo": false,
+        "country": "USA",
+        "line1": "2730 E McKellips Rd",
+        "addressType": "RESIDENTIAL"
+      }
+    },
+    "fulfillmentType": "S2H",
+    "totals": {
+      "subtotal": {
+        "currencyAmount": 5,
+        "currencyUnit": "USD"
+      },
+      "tax": {
+        "currencyAmount": 0.42,
+        "currencyUnit": "USD"
+      },
+      "grandTotal": {
+        "currencyAmount": 11.41,
+        "currencyUnit": "USD"
+      }
+    },
+    "boxingDetails": [
+      {
+        "boxInstanceId": "T1|178eddab684|39330",
+        "boxName": "T1",
+        "boxDimensions": {
+          "length": 10,
+          "breadth": 5,
+          "height": 8,
+          "unitOfMeasure": "INCH"
+        },
+        "weight": {
+          "unitOfMeasure": "LB",
+          "measurementValue": 10
+        },
+        "boxType": "Box",
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          }
+        ],
+        "flapsDownEligible" : "true"
+      },
+      {
+        "boxInstanceId": "T1|4851sadasa8|39331",
+        "boxName": "T1",
+        "boxDimensions": {
+          "length": 10,
+          "breadth": 5,
+          "height": 8,
+          "unitOfMeasure": "INCH"
+        },
+        "weight": {
+          "unitOfMeasure": "LB",
+          "measurementValue": 10
+        },
+        "boxType": "Box",
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "2",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible" : "false"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    initialization-mode: always # this is to indicate Spring Boot to always generate a db schema using `schema.sql` file.
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServer2008Dialect
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      bootstrap-servers: localhost:9092
+      fms-producer-topic: FULFILLMENT_STATUS_UPDATES_NONPROD_THOR_LOCAL
+    consumer:
+      group-id: order-ingestion-fmsorderhandler
+    dlq-consumer:
+      group-id: order-ingestion-dlq-fms-order-handler-local
+    fms-enable-ssl: false
+
+fms-consumer-topic: FULFILLMENT_ORDER_OUTBOUND_NONPROD_THOR_LOCAL
+customer-po-topic: customer-purchase-orders-local
+server:
+  port: 8083
+
+inventory-projection:
+  host: localhost
+  port: 8091

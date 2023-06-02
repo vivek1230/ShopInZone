@@ -1,0 +1,675 @@
+{
+  "id": "CustomerOrder",
+  "partitionKey": "9610_4871836418414",
+  "fmsOrder": {
+    "shipNode": {
+      "name": "NJ51 Pedricktown NJ FC 9610",
+      "id": "9615",
+      "forceShipNode": false,
+      "wmReferenceNumber": "9615",
+      "type": "DC",
+      "timeZone": "PST"
+    },
+    "carrierMethodId": "267",
+    "orderPlacedTimestamp": "2022-06-30T20:13:07+00:00",
+    "buId": "0",
+    "orderPriority": "0",
+    "tcNumber": "939777710977076094762",
+    "purchaseOrderNo": "4871836418414",
+    "martId": "0",
+    "sourceOrderId": "200010050252729",
+    "paymentDetails": [
+      {
+        "paymentStatus": "AUTHORIZED",
+        "paymentReferenceId": "6856",
+        "paymentType": "CREDITCARD",
+        "last4": "6856",
+        "cardType": "VISA",
+        "billTo": {
+          "name": {
+            "firstName": "Gwendolyn",
+            "lastName": "Baker"
+          },
+          "phone": "3473668624",
+          "email": "gwenlbaker@gmail.com"
+        },
+        "billingAddress": {
+          "city": "Bronx",
+          "zip": "10460",
+          "state": "NY",
+          "poBox": false,
+          "apoFpo": false,
+          "country": "USA",
+          "line1": "2146 Vyse Ave.",
+          "addressType": "RESIDENTIAL"
+        },
+        "amountCollected": {
+          "currencyAmount": 0,
+          "currencyUnit": "USD"
+        }
+      }
+    ],
+    "customerOrderId": "200010050252729",
+    "fulfillmentLines": [
+      {
+        "lineType": "PHYSICAL",
+        "substitutionsAllowed": false,
+        "fulfillmentLineId": "1",
+        "sellerLineId": "5",
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 1
+        },
+        "itemDetails": {
+          "offerId": "75FFBBC6555D493E9315B80F25D2E257",
+          "shipNodeItemId": "551600773",
+          "itemDesc": "Purex Liquid Laundry Detergent Plus OXI, Stain Defense Technology, 128 Fluid Ounces, 85 Wash Loads",
+          "gtin": "00024200000868",
+          "wupc": "0002420000086",
+          "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+          "upc": "024200000868",
+          "itemId": "30260539",
+          "imageUrl": "https://i5.walmartimages.com/asr/d8af5db2-bfbd-48ef-9885-db80cdad0c32.607d1eaf9e8eba532d1e2e4300125dc7.jpeg"
+        },
+        "chargeDetails": [
+          {
+            "chargeCategory": "PRODUCT",
+            "chargeName": "ItemPrice",
+            "chargeId": "ItemPrice",
+            "chargePerUnit": {
+              "currencyAmount": 8.97,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 8.97,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": {
+              "taxPerUnit": {
+                "currencyAmount": 0.79,
+                "currencyUnit": "USD"
+              },
+              "taxPerLine": {
+                "currencyAmount": 0.79,
+                "currencyUnit": "USD"
+              }
+            },
+            "discount": false,
+            "billable": false
+          },
+          {
+            "chargeCategory": "COST",
+            "chargeName": "COST",
+            "chargeId": "COST",
+            "chargePerUnit": {
+              "currencyAmount": 6.37,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 6.37,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": null,
+            "discount": false,
+            "billable": false
+          }
+        ],
+        "instructions": [
+          {
+            "type": "DELIVERY"
+          }
+        ],
+        "lineTotal": {
+          "currencyAmount": 9.76,
+          "currencyUnit": "USD"
+        },
+        "eventActive": false
+      },
+      {
+        "lineType": "PHYSICAL",
+        "substitutionsAllowed": false,
+        "fulfillmentLineId": "2",
+        "sellerLineId": "3",
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 1
+        },
+        "itemDetails": {
+          "offerId": "D9AA89536B534918B1F359E88D081F36",
+          "shipNodeItemId": "563049015",
+          "itemDesc": "Snuggle Exhilarations Liquid Fabric Softener, Blue Iris & Ocean Breeze, 96 Ounce, 112 Loads",
+          "gtin": "00072613455225",
+          "wupc": "0007261345522",
+          "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+          "upc": "072613455225",
+          "itemId": "15026766",
+          "imageUrl": "https://i5.walmartimages.com/asr/a5c9ad25-44af-46a3-96ca-8bd57a9c4736.cf6516c56d4e5a7ff6a0faf185847024.jpeg"
+        },
+        "chargeDetails": [
+          {
+            "chargeCategory": "PRODUCT",
+            "chargeName": "ItemPrice",
+            "chargeId": "ItemPrice",
+            "chargePerUnit": {
+              "currencyAmount": 8.47,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 8.47,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": {
+              "taxPerUnit": {
+                "currencyAmount": 0.75,
+                "currencyUnit": "USD"
+              },
+              "taxPerLine": {
+                "currencyAmount": 0.75,
+                "currencyUnit": "USD"
+              }
+            },
+            "discount": false,
+            "billable": false
+          },
+          {
+            "chargeCategory": "COST",
+            "chargeName": "COST",
+            "chargeId": "COST",
+            "chargePerUnit": {
+              "currencyAmount": 6.58,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 6.58,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": null,
+            "discount": false,
+            "billable": false
+          }
+        ],
+        "instructions": [
+          {
+            "type": "DELIVERY"
+          }
+        ],
+        "lineTotal": {
+          "currencyAmount": 9.22,
+          "currencyUnit": "USD"
+        },
+        "eventActive": false
+      },
+      {
+        "lineType": "PHYSICAL",
+        "substitutionsAllowed": false,
+        "fulfillmentLineId": "3",
+        "sellerLineId": "7",
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 2
+        },
+        "itemDetails": {
+          "offerId": "4A8FF10E12A447CEB0DFFFCE271569CB",
+          "shipNodeItemId": "1349611",
+          "itemDesc": "Clorox 2 Laundry Stain Remover and Color Booster, Original, 88 oz Bottle",
+          "gtin": "00044600307138",
+          "wupc": "0004460030713",
+          "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+          "upc": "044600307138",
+          "itemId": "21190601",
+          "imageUrl": "https://i5.walmartimages.com/asr/88a8992f-285b-46f8-993c-f53560a05765.d40b4cd16ea3f3d6f199f7dcc50152ce.jpeg"
+        },
+        "chargeDetails": [
+          {
+            "chargeCategory": "PRODUCT",
+            "chargeName": "ItemPrice",
+            "chargeId": "ItemPrice",
+            "chargePerUnit": {
+              "currencyAmount": 13.08,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 26.16,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": {
+              "taxPerUnit": {
+                "currencyAmount": 1.16,
+                "currencyUnit": "USD"
+              },
+              "taxPerLine": {
+                "currencyAmount": 2.32,
+                "currencyUnit": "USD"
+              }
+            },
+            "discount": false,
+            "billable": false
+          },
+          {
+            "chargeCategory": "COST",
+            "chargeName": "COST",
+            "chargeId": "COST",
+            "chargePerUnit": {
+              "currencyAmount": 10.5,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 21,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": null,
+            "discount": false,
+            "billable": false
+          }
+        ],
+        "instructions": [
+          {
+            "type": "DELIVERY"
+          }
+        ],
+        "lineTotal": {
+          "currencyAmount": 28.48,
+          "currencyUnit": "USD"
+        },
+        "eventActive": false
+      },
+      {
+        "lineType": "PHYSICAL",
+        "substitutionsAllowed": false,
+        "fulfillmentLineId": "4",
+        "sellerLineId": "6",
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 4
+        },
+        "itemDetails": {
+          "offerId": "D3502AF35FF34DA099709022EA5261E0",
+          "shipNodeItemId": "550054608",
+          "itemDesc": "Special Kitty Fragrance Free Natural Clay Non-Clumping Cat Litter, 25 lb",
+          "gtin": "00078742126883",
+          "wupc": "0007874212688",
+          "sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+          "upc": "078742126883",
+          "itemId": "10293705",
+          "imageUrl": "https://i5.walmartimages.com/asr/12853e33-c395-4be4-aa2b-d3b21f236bcb.691b828a61bbf7b6847590c399cf5d83.jpeg"
+        },
+        "chargeDetails": [
+          {
+            "chargeCategory": "PRODUCT",
+            "chargeName": "ItemPrice",
+            "chargeId": "ItemPrice",
+            "chargePerUnit": {
+              "currencyAmount": 4.44,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 17.76,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": {
+              "taxPerUnit": {
+                "currencyAmount": 0.39,
+                "currencyUnit": "USD"
+              },
+              "taxPerLine": {
+                "currencyAmount": 1.58,
+                "currencyUnit": "USD"
+              }
+            },
+            "discount": false,
+            "billable": false
+          },
+          {
+            "chargeCategory": "COST",
+            "chargeName": "COST",
+            "chargeId": "COST",
+            "chargePerUnit": {
+              "currencyAmount": 2.94,
+              "currencyUnit": "USD"
+            },
+            "chargePerLine": {
+              "currencyAmount": 11.76,
+              "currencyUnit": "USD"
+            },
+            "taxDetails": null,
+            "discount": false,
+            "billable": false
+          }
+        ],
+        "instructions": [
+          {
+            "type": "DELIVERY"
+          }
+        ],
+        "lineTotal": {
+          "currencyAmount": 19.32,
+          "currencyUnit": "USD"
+        },
+        "eventActive": false
+      }
+    ],
+    "lineDates": {
+      "preciseDeliveryDate": "2022-07-02T21:59:00+00:00",
+      "expectedShipDate": "2022-07-01T20:45:00+00:00",
+      "minDeliveryDate": "2022-07-02T21:59:00+00:00",
+      "maxDeliveryDate": "2022-07-02T21:59:00+00:00",
+      "orderProcessingDate": "2022-07-02T06:57:00+00:00"
+    },
+    "orderChannelId": "7C83B197D2D041CD9A7CE2A0E728E08F",
+    "customer": {
+      "contact": {
+        "name": {
+          "firstName": "Gwendoly",
+          "lastName": "Baker"
+        },
+        "phone": "3473668624",
+        "email": "gwenlbaker@gmail.com"
+      },
+      "membershipInfo": null
+    },
+    "orderOrigin": "0",
+    "shippingMethod": "EXPEDITED",
+    "shippingTo": {
+      "contact": {
+        "name": {
+          "firstName": "Gwendolyn",
+          "lastName": "Baker"
+        },
+        "phone": "3473668624",
+        "email": "gwenlbaker@gmail.com"
+      },
+      "address": {
+        "city": "Bronx",
+        "zip": "10460",
+        "state": "NY",
+        "line4": "10460|C003|Y|N",
+        "poBox": false,
+        "apoFpo": false,
+        "country": "USA",
+        "line1": "2146 Vyse Ave.",
+        "addressType": "RESIDENTIAL"
+      }
+    },
+    "fulfillmentType": "S2H",
+    "totals": {
+      "subtotal": {
+        "currencyAmount": 61.36,
+        "currencyUnit": "USD"
+      },
+      "tax": {
+        "currencyAmount": 5.42,
+        "currencyUnit": "USD"
+      },
+      "grandTotal": {
+        "currencyAmount": 66.78,
+        "currencyUnit": "USD"
+      }
+    },
+    "boxingDetails": [
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-L4-39",
+        "boxName": "W-L4-39",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 29,
+          "breadth": 20,
+          "height": 15
+        },
+        "weight": {
+          "measurementValue": 5.134154275,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          },
+          {
+            "fulfillmentLineId": "4",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          },
+          {
+            "fulfillmentLineId": "3",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-L4-39",
+        "boxName": "W-L4-39",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 29,
+          "breadth": 20,
+          "height": 15
+        },
+        "weight": {
+          "measurementValue": 5.134154275,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "2",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          },
+          {
+            "fulfillmentLineId": "4",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0156",
+        "boxName": "W-PB0156",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 21.37,
+          "breadth": 16.8,
+          "height": 5.79
+        },
+        "weight": {
+          "measurementValue": 1.5702108868075,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "4",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          }
+        ],
+        "flapsDownEligible": false
+      },
+      {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0156",
+        "boxName": "W-PB0156",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 21.37,
+          "breadth": 16.8,
+          "height": 5.79
+        },
+        "weight": {
+          "measurementValue": 1.5702108868075,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "4",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          }
+        ],
+        "flapsDownEligible": false
+      }
+    ]
+  },
+  "fcid": "9610",
+  "purchaseOrderNo": "4871836418414",
+  "pickTicketDetails": [
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-L4-39",
+        "boxName": "W-L4-39",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 29,
+          "breadth": 20,
+          "height": 15
+        },
+        "weight": {
+          "measurementValue": 5.134154275,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "1",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          },
+          {
+            "fulfillmentLineId": "4",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          },
+          {
+            "fulfillmentLineId": "3",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 2
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104750638A"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-L4-39",
+        "boxName": "W-L4-39",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 29,
+          "breadth": 20,
+          "height": 15
+        },
+        "weight": {
+          "measurementValue": 5.134154275,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "2",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          },
+          {
+            "fulfillmentLineId": "4",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          }
+        ],
+        "flapsDownEligible": true
+      },
+      "pickTicketId": "96104750638B"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0156",
+        "boxName": "W-PB0156",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 21.37,
+          "breadth": 16.8,
+          "height": 5.79
+        },
+        "weight": {
+          "measurementValue": 1.5702108868075,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "4",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          }
+        ],
+        "flapsDownEligible": false
+      },
+      "pickTicketId": "96104750638C"
+    },
+    {
+      "boxingDetails": {
+        "boxSequence": null,
+        "boxInstanceId": "W-PB0156",
+        "boxName": "W-PB0156",
+        "boxType": "Box",
+        "boxDimensions": {
+          "length": 21.37,
+          "breadth": 16.8,
+          "height": 5.79
+        },
+        "weight": {
+          "measurementValue": 1.5702108868075,
+          "unitOfMeasure": "LB"
+        },
+        "lineDetails": [
+          {
+            "fulfillmentLineId": "4",
+            "quantity": {
+              "unitOfMeasure": "EA",
+              "measurementValue": 1
+            }
+          }
+        ],
+        "flapsDownEligible": false
+      },
+      "pickTicketId": "96104750638D"
+    }
+  ],
+  "status": "Rejected",
+  "_rid": "x2V0AKLgKp6KZgAAAAAAAA==",
+  "_self": "dbs/x2V0AA==/colls/x2V0AKLgKp4=/docs/x2V0AKLgKp6KZgAAAAAAAA==/",
+  "_etag": "\"00001d27-0000-0200-0000-62be43e30000\"",
+  "_attachments": "attachments/",
+  "_ts": 1656636387
+}

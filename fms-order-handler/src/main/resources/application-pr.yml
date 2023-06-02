@@ -1,0 +1,65 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,prometheus
+
+  metrics:
+    enable:
+      jvm: true
+
+    export:
+      prometheus:
+        histogram-flavor: prometheus
+
+  endpoint:
+    health:
+      group:
+        liveness:
+          include: "*"
+        readiness:
+          include: "*"
+      probes:
+        enabled: true
+azure:
+  cosmos:
+    uri: ${COSMOS_ENDPOINT}
+    key: ${COSMOS_KEY}
+    database: ${EPHEMERAL_ENV_ID}
+
+application:
+  data:
+    pickTicketIDProvider: pt_id_seq # the SQL Sequence that will generate IDs for PickTicket.
+spring:
+  jmx:
+    enabled: true
+  config:
+    import: optional:configtree:./secrets/,optional:configtree:/etc/secrets/
+  sql:
+    init:
+      mode: always # This is to always initialize a database using scripts as script-based initialization is performed by default only for embedded databases.
+
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    initialization-mode: always # this is to indicate Spring Boot to always generate a db schema using `schema.sql` file.
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServer2008Dialect
+  kafka:
+    bootstrap-servers: ${ENDGAME_BROKERS}
+    producer:
+      bootstrap-servers: ${ENDGAME_BROKERS}
+      fms-producer-topic: FULFILLMENT_STATUS_UPDATES_NONPROD_THOR-pr
+      customer-cancellation-topic: endgame-oi-pt-cancellation-pr
+    consumer:
+      group-id: order-ingestion-fmsorderhandler
+      cancel-order-group-id: order-ingestion-fmscancellation-handler-pr
+    dlq-consumer:
+      group-id: order-ingestion-dlq-fms-order-handler-pr
+    fms-enable-ssl: false
+
+fms-consumer-topic: FULFILLMENT_ORDER_OUTBOUND_NONPROD-pr
+customer-po-topic: customer-purchase-orders-pr
+
+inventory-projection:
+  port: 8080
