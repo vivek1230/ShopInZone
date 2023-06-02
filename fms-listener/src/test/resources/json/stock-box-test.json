@@ -1,0 +1,14 @@
+{
+  "id": "W-L1-33",
+  "fcID": "9610",
+  "weight": 50,
+  "height": 25,
+  "width": 17,
+  "length": 13,
+  "cost": 1.26,
+  "consolidationOnly": true,
+  "testOnly": true,
+  "metadata": {
+    "userId": "unknown"
+  }
+}

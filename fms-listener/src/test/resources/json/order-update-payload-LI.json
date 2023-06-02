@@ -1,0 +1,24 @@
+{
+  "eventId": "108715425376151-LI",
+  "eventName": "ORDER_STATUS_UPDATE",
+  "eventSource": "THOR",
+  "eventTime": "2022-06-02T03:30:54Z",
+  "eventPayload": {
+    "buId": "0",
+    "martId": "0",
+    "purchaseOrderNo": "108715425376151",
+    "pickTicketNumber": null,
+    "purchaseOrderLines": [
+      {
+        "fulfillmentLineId": "1",
+        "status": "LI",
+        "quantity": {
+          "unitOfMeasure": "EA",
+          "measurementValue": 1
+        },
+        "changeReason": null,
+        "modifiedDate": "2022-06-02T03:30:53Z"
+      }
+    ]
+  }
+}

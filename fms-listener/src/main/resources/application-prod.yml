@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    consumer:
+      fms-consumer-topic: Fulfillment_Order_Outbound_Prod_Thor
+      group-id: Endgame-order-ingestion
+    producer:
+      fms-producer-topic: Fulfillment_Status_Updates_Prod_Thor
+      packman-input-topic: thor-packman-input-prod
+      endgame-producer-topic: customer-purchase-orders-prod
+

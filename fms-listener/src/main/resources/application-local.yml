@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;databaseName=order-ingestion-local
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServer2008Dialect
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: order-ingestion-fms-listener-local
+      fms-consumer-topic: FULFILLMENT_ORDER_OUTBOUND_NONPROD_THOR_LOCAL
+    producer:
+      fms-producer-topic: FULFILLMENT_STATUS_UPDATES_NONPROD_THOR_LOCAL
+      packman-input-topic: thor-packman-input-local
+      endgame-producer-topic: customer-purchase-orders-local
+
+
+server:
+  port: 8082

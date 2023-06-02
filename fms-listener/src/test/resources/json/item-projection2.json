@@ -1,0 +1,172 @@
+{
+  "id": "0",
+  "partitionKey": "ItemProjection_00193159050368",
+  "gtin": "00193159050369",
+  "caseUpc": "40041554259245",
+  "walmartItemNum": 553503188,
+  "basicInfo": {
+    "name": "Maybelline Instant Age Rewind Eraser Dark Circles Treatment Concealer, Fair, 0.2 fl. oz.",
+    "description": "",
+    "descriptionLong": "",
+    "imageURL": "https://i5.walmartimages.com/asr/c379f213-e1a9-4a97-9260-449c2ba3496c.a3288845eb98810bbab51819f6bc3979.jpeg"
+  },
+  "category": "GeneralHandling",
+  "subCategory": "None",
+  "productTypes": [],
+  "slottingCode": "GeneralStorage",
+  "batteryCount": 0,
+  "weightOfAllBatteries": 0,
+  "transportationModes": {
+    "1": {
+      "mode": {
+        "dotHazardousClass": {
+          "code": "ORM-D",
+          "description": "OTHER REGULATED MATERIAL"
+        },
+        "dotIdNbr": null,
+        "dotRegionCode": null,
+        "subsidiaryClass": null,
+        "mode": null
+      },
+      "unClassification": "None",
+      "ormd": false
+    },
+    "2": {
+      "mode": {
+        "dotHazardousClass": {
+          "code": "9",
+          "description": "MISCELLANEOUS"
+        },
+        "dotIdNbr": null,
+        "dotRegionCode": null,
+        "subsidiaryClass": null,
+        "mode": null
+      },
+      "unClassification": "None",
+      "ormd": false
+    },
+    "3": {
+      "mode": {
+        "dotHazardousClass": {
+          "code": "9",
+          "description": "MISCELLANEOUS"
+        },
+        "dotIdNbr": null,
+        "dotRegionCode": null,
+        "subsidiaryClass": null,
+        "mode": null
+      },
+      "unClassification": "None",
+      "ormd": false
+    },
+    "4": {
+      "mode": {
+        "dotHazardousClass": {
+          "code": "9",
+          "description": "MISCELLANEOUS"
+        },
+        "dotIdNbr": null,
+        "dotRegionCode": null,
+        "subsidiaryClass": null,
+        "mode": null
+      },
+      "unClassification": "None",
+      "ormd": false
+    },
+    "5": {
+      "mode": {
+        "dotHazardousClass": {
+          "code": "9",
+          "description": "MISCELLANEOUS"
+        },
+        "dotIdNbr": null,
+        "dotRegionCode": null,
+        "subsidiaryClass": null,
+        "mode": null
+      },
+      "unClassification": "None",
+      "ormd": false
+    },
+    "6": {
+      "mode": {
+        "dotHazardousClass": {
+          "code": "3",
+          "description": "FLAMMABLE LIQUIDS"
+        },
+        "dotIdNbr": null,
+        "dotRegionCode": null,
+        "subsidiaryClass": null,
+        "mode": null
+      },
+      "unClassification": "None",
+      "ormd": false
+    },
+    "7": {
+      "mode": {
+        "dotHazardousClass": {
+          "code": "3",
+          "description": "FLAMMABLE LIQUIDS"
+        },
+        "dotIdNbr": null,
+        "dotRegionCode": null,
+        "subsidiaryClass": null,
+        "mode": null
+      },
+      "unClassification": "None",
+      "ormd": false
+    }
+  },
+  "vendorName": "",
+  "vendorNum": 803903,
+  "departmentNum": 46,
+  "fcMap": {
+    "9610": {
+      "shipping": {
+        "serialNumRequired": false,
+        "iccid": false,
+        "imei": false,
+        "outboundPrep": "None",
+        "shipAlone": false,
+        "shipAsIs": false,
+        "nonRigid": false,
+        "packagingType": "Box"
+      },
+      "storage": {
+        "inboundPrep": "Bag",
+        "hasSellByDate": true,
+        "eachHeight": 10.63,
+        "eachWidth": 10,
+        "eachLength": 10,
+        "eachWeight": 25.67,
+        "food": false,
+        "nestable": true,
+        "powder": false,
+        "liquid": false,
+        "glass": false
+      },
+      "containers": [
+        {
+          "gtin": "00193159050369",
+          "batteryType": "NoBattery",
+          "vnpkheight": 5.95,
+          "vnpkwidth": 1.79,
+          "vnpklength": 2.05,
+          "vnpkweight": 0.1411,
+          "conveyable": false
+        }
+      ]
+    }
+  },
+  "chemical": true,
+  "aerosol": false,
+  "vnpkqty": 2,
+  "whpkqty": 2,
+  "lithiumIon": false,
+  "lithiumMetal": false,
+  "pesticide": false,
+  "_rid": "YyYXAI0IcBkXAAAAAAAAAA==",
+  "_self": "dbs/YyYXAA==/colls/YyYXAI0IcBk=/docs/YyYXAI0IcBkXAAAAAAAAAA==/",
+  "_etag": "\"0000378d-0000-0200-0000-627b42ec0000\"",
+  "_attachments": "attachments/",
+  "_ts": 1652245228
+}

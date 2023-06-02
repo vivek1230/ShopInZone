@@ -1,0 +1,54 @@
+{
+  "orderId": "108715325337528FAT",
+  "skus": [
+    {
+      "skuId": "00193159050368",
+      "length": 12,
+      "width": 12,
+      "height": 12.63,
+      "weight": 25.67,
+      "qty": 2,
+      "temperatureZone": "Regular",
+      "protectionLevel": "Box",
+      "shipsAlone": false,
+      "limitedQty": false,
+      "foldable": false
+    },
+    {
+      "skuId": "00193159050368",
+      "length": 12,
+      "width": 12,
+      "height": 12.63,
+      "weight": 25.67,
+      "qty": 3,
+      "temperatureZone": "Regular",
+      "protectionLevel": "Box",
+      "shipsAlone": false,
+      "limitedQty": false,
+      "foldable": false
+    }
+  ],
+  "boxes": [
+    {
+      "containerId": "W-L1-33",
+      "containerKind": "Box",
+      "length": 13,
+      "width": 17,
+      "height": 25,
+      "weight": 50,
+      "maxAllowableWeight": 0
+    }
+  ],
+  "bags": [
+    {
+      "containerId": "Westrock",
+      "containerKind": "Bag",
+      "length": 18,
+      "width": 16,
+      "height": 0.25,
+      "maxHeight": 0.25,
+      "maxAllowableWeight": 7,
+      "angle": 75
+    }
+  ]
+}

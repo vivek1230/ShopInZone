@@ -1,0 +1,20 @@
+{
+  "weight": 0.2,
+  "length": 18,
+  "width": 16,
+  "height": 0.25,
+  "maxAllowableWeight": 7,
+  "metadata": {
+    "userId": "unknown"
+  },
+  "id": "Westrock",
+  "fcID": "9610",
+  "angle": 75,
+  "maxHeight": 0.25,
+  "containerKind": "Bag",
+  "_rid": "aRp7ALsgviYBAAAAAAAAAA==",
+  "_self": "dbs/aRp7AA==/colls/aRp7ALsgviY=/docs/aRp7ALsgviYBAAAAAAAAAA==/",
+  "_etag": "\"47000527-0000-0200-0000-629639540000\"",
+  "_attachments": "attachments/",
+  "_ts": 1654012244
+}

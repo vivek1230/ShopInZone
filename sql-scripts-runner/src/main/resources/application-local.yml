@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;databaseName=order-ingestion-local
+    initialization-mode: always # this is to indicate Spring Boot to always generate a db schema using `schema.sql` file.
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServer2008Dialect
